@@ -26,8 +26,8 @@ var speakWord ="Good Bye ";
 //   console.log(speakWord + " " + name);
 // }
 
-byeSpeaker.speak = function () {
-	console.log(speakWord + byeSpeaker.names);
+byeSpeaker.speak = function (name) {
+	console.log(speakWord + name);
 
 }
 
@@ -36,5 +36,5 @@ byeSpeaker.speak = function () {
 // xxxx.xxxx = byeSpeaker;
 
 window.byeSpeaker = byeSpeaker;
-window.byeSpeaker.speak = byeSpeaker.speak;
+
 })(window);
